@@ -27,18 +27,32 @@ public class UserService {
 				   .orElseThrow(() -> new ObjectNotFoundException("Objeto não encontrado"));
 	}
 	
+	// Inserir novo usuário
 	public User insert(User obj) {
 		return repo.insert(obj);
-		
 	}
 	
+	// Deletar usuário por ID
 	public void delete(String id) {
-		findById(id);
+		findById(id); // garante que o usuário existe antes de deletar
 		repo.deleteById(id);
 	}
 	
-	public User fromDTO (UserDTO objDto) {
+	// Atualizar usuário existente
+	public User update(User obj) {
+		User newObj = findById(obj.getId()); // busca garantindo que existe
+		updateData(newObj, obj);
+		return repo.save(newObj);
+	}
+	
+	// Copiar dados para atualização
+	private void updateData(User newObj, User obj) {
+		newObj.setName(obj.getName());
+		newObj.setEmail(obj.getEmail());
+	}
+	
+	// Converter DTO para entidade
+	public User fromDTO(UserDTO objDto) {
 		return new User(objDto.getId(), objDto.getName(), objDto.getEmail());
-		
 	}
 }
