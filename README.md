@@ -1,3 +1,5 @@
+
+
 # 📘 Workshop MongoDB com Spring Boot
 
 Projeto desenvolvido para estudo de **banco de dados orientado a documentos (NoSQL)** utilizando **Spring Boot** e **MongoDB**.
@@ -5,6 +7,10 @@ Projeto desenvolvido para estudo de **banco de dados orientado a documentos (NoS
 Este repositório foi construído a partir do curso do [Nelio Alves](http://educandoweb.com.br), com adaptações e evoluções pessoais. O objetivo é compreender os principais conceitos de bancos de dados NoSQL, implementar operações CRUD, explorar associações entre documentos e realizar consultas utilizando **Spring Data MongoDB**.
 
 ---
+
+<p align="center">
+  <img src="./img/img1.png" alt="img1" width="600"/>
+</p>
 
 ## 🚀 Tecnologias utilizadas
 
@@ -48,6 +54,19 @@ Este repositório foi construído a partir do curso do [Nelio Alves](http://educ
   * Título
   * Intervalo de datas
   * Texto no corpo ou comentários
+
+<p align="center">
+  <img src="./img/img2.png" alt="img2" width="400"/>
+</p>
+<p align="center">
+  <img src="./img/img3.png" alt="img3" width="400"/>
+</p>
+<p align="center">
+  <img src="./img/img4.png" alt="img4" width="400"/>
+</p>
+<p align="center">
+  <img src="./img/img5.png" alt="img5" width="400"/>
+</p>
 
 ---
 
@@ -105,3 +124,5 @@ A aplicação estará disponível em:
 * Curso [Java com Spring Boot e MongoDB](https://www.udemy.com/course/mongodb-com-spring-boot/) – Nelio Alves.
 * [Documentação oficial Spring Data MongoDB](https://docs.spring.io/spring-data/mongodb/docs/current/reference/html/).
 * [MongoDB Docs](https://www.mongodb.com/docs/).
+
+---
